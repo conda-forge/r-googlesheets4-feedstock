@@ -11,6 +11,9 @@ jobs:
       win_r_base3.6target_platformwin-64:
         CONFIG: win_r_base3.6target_platformwin-64
         UPLOAD_PACKAGES: 'True'
+      win_r_base4.0target_platformwin-64:
+        CONFIG: win_r_base4.0target_platformwin-64
+        UPLOAD_PACKAGES: 'True'
     maxParallel: 4
   timeoutInMinutes: 360
   variables:
