@@ -1,4 +1,4 @@
-{% set version = "0.3.0" %}
+{% set version = "1.0.0" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,7 +10,7 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/googlesheets4_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/googlesheets4/googlesheets4_{{ version }}.tar.gz
-  sha256: 621137d078d89a91f59e61a2be83f3bcfbef2e6db9c623b1485940f51b3b6111
+  sha256: 0a107d76aac99d6db48d97ce55810c1412b2197f457b8476f676169a36c7cc7a
 
 build:
   merge_build_host: true  # [win]
