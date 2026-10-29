@@ -1,4 +1,4 @@
-{% set version = "1.1.2" %}
+{% set version = "1.1.3" %}
 {% set posix = 'm2-' if win else '' %}
 
 package:
@@ -9,10 +9,10 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/googlesheets4_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/googlesheets4/googlesheets4_{{ version }}.tar.gz
-  sha256: 7ba9d5dd051a405a7af6d41d5fc12bdec8474f9fb1482ef32eb79aa6914fadd9
+  sha256: fe31b35031020d8c0b4c7bc18770feefc0100618dd4a38da9be126bb6439361e
 
 build:
-  number: 1
+  number: 0
   noarch: generic
   rpaths:
     - lib/R/lib/
@@ -62,8 +62,8 @@ test:
 about:
   home: https://googlesheets4.tidyverse.org, https://github.com/tidyverse/googlesheets4
   license: MIT
-  summary: Interact with Google Sheets through the Sheets API v4 <https://developers.google.com/sheets/api>. "API" is an acronym for "application programming interface"; the Sheets API allows users to interact with Google Sheets programmatically, instead of via a web browser. The "v4" refers to the fact that the Sheets API
-    is currently at version 4. This package can read and write both the metadata and the cell data in a Sheet.
+  summary: Interact with Google Sheets through the Sheets API v4 <https://developers.google.com/sheets/api>. "API" is an acronym for "application programming interface"; the Sheets API allows users to interact with Google Sheets programmatically, instead of via a web browser. The "v4" refers to the fact that the Sheets
+    API is currently at version 4. This package can read and write both the metadata and the cell data in a Sheet.
   license_family: MIT
   license_file:
     - {{ environ["PREFIX"] }}/lib/R/share/licenses/MIT
